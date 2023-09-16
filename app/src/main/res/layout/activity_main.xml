@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content"
         android:background="#D0E3D9"
         android:backgroundTint="#D4BBDA"
+        android:paddingVertical="10dp"
         tools:context=".MainActivity">
 
         <TextView
@@ -30,10 +32,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.056" />
 
+
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/name"
             android:layout_width="293dp"
             android:layout_height="62dp"
+            android:layout_marginTop="76dp"
             android:backgroundTint="#404040"
             android:ems="10"
             android:hint="Name"
@@ -43,17 +47,16 @@
             android:textColorHighlight="#404040"
             android:textColorHint="#404040"
             android:textColorLink="#404040"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title"
-            app:layout_constraintVertical_bias="0.093" />
-
+            app:layout_constraintTop_toBottomOf="@+id/title" />
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/college"
             android:layout_width="293dp"
             android:layout_height="62dp"
+            android:layout_marginTop="32dp"
             android:autofillHints="College"
             android:backgroundTint="#404040"
             android:drawableTint="#404040"
@@ -65,31 +68,173 @@
             android:textColorHighlight="#404040"
             android:textColorHint="#404040"
             android:textColorLink="#404040"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/editTextText"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/editTextText"
-            app:layout_constraintTop_toBottomOf="@+id/editTextText"
-            app:layout_constraintVertical_bias="0.024" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
 
         <EditText
-            android:id="@+id/editTextText3"
+            android:id="@+id/branch"
             android:layout_width="293dp"
             android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#404040"
             android:ems="10"
             android:hint="Branch"
             android:inputType="text"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="312dp" />
+            android:textColor="#464646"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/college" />
 
         <EditText
-            android:id="@+id/editTextText4"
+            android:id="@+id/email"
             android:layout_width="293dp"
             android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#404040"
             android:ems="10"
-            android:hint="Year"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#404040"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CGPA" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#404040"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:textColor="#404040"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#404040"
+            android:ems="10"
+            android:hint="Address"
             android:inputType="text"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="401dp" />
+            android:textColor="#404040"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#404040"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number"
+            android:textColor="#404040"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <EditText
+            android:id="@+id/gender"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#404040"
+            android:ems="10"
+            android:hint="Gender"
+            android:inputType="text"
+            android:textColor="#404040"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/age" />
+
+        <EditText
+            android:id="@+id/birthdate"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#404040"
+            android:ems="10"
+            android:foregroundTint="#404040"
+            android:hint="Birth Date"
+            android:inputType="text"
+            android:textColor="#404040"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+        <EditText
+            android:id="@+id/CGPA"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#404040"
+            android:ems="10"
+            android:hint="CGPA"
+            android:inputType="numberDecimal"
+            android:textColor="#404040"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/branch" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:onClick="openActivity"
+            android:text="Submit"
+            android:textColorHighlight="#E91E63"
+            android:textColorLink="#E91E63"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/birthdate" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
