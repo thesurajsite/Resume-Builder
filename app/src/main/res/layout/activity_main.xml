@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:foregroundTint="#404040">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D0E3D9"
+        android:backgroundTint="#D4BBDA"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aclonica"
+            android:text="Resume Builder"
+            android:textColor="#404040"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.056" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:backgroundTint="#404040"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="text"
+            android:shadowColor="#404040"
+            android:textColor="#404040"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintVertical_bias="0.093" />
+
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:autofillHints="College"
+            android:backgroundTint="#404040"
+            android:drawableTint="#404040"
+            android:ems="10"
+            android:foregroundTint="#404040"
+            android:hint="College"
+            android:inputType="text"
+            android:textColor="#404040"
+            android:textColorHighlight="#404040"
+            android:textColorHint="#404040"
+            android:textColorLink="#404040"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editTextText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTextText"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText"
+            app:layout_constraintVertical_bias="0.024" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:hint="Branch"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="312dp" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="293dp"
+            android:layout_height="62dp"
+            android:ems="10"
+            android:hint="Year"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="61dp"
+            tools:layout_editor_absoluteY="401dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
