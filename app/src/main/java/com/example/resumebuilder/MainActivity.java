@@ -10,19 +10,10 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText name;
-    EditText college;
-    EditText branch;
-    EditText CGPA;
-    EditText email;
-    EditText phone;
-    EditText address;
-    EditText age;
-    EditText gender;
-    EditText birthdate;
+    EditText name, college, branch, CGPA,email,phone, address, age, gender,birthdate;
 
-    public static final String EXTRA_NAME="itsJustARandomKey12345";   // intent extras
-    public static final String EXTRA_COLLEGE="itsJustARandomKey1";
+   // public static final String EXTRA_NAME="itsJustARandomKey12345";   // intent extras
+  //  public static final String EXTRA_COLLEGE="itsJustARandomKey1";
 
 
 
@@ -49,17 +40,35 @@ public class MainActivity extends AppCompatActivity {
 
         String nameText=name.getText().toString();
         String collegeText=college.getText().toString();
-        String branchText=branch.getText().toString();
-        String CGPAText=CGPA.getText().toString();
-        String emailText=email.getText().toString();
-        String phoneText=phone.getText().toString();
-        String addressText=address.getText().toString();
-        String ageText=age.getText().toString();
-        String genderText=gender.getText().toString();
-        String birthdateText=birthdate.getText().toString();
+      //  String branchText=branch.getText().toString();
 
-        intent.putExtra(EXTRA_NAME,nameText);
-        intent.putExtra(EXTRA_COLLEGE,collegeText);
+//        String CGPAText=CGPA.getText().toString();
+//        double intCGPA=Double.parseDouble(CGPAText);
+//
+//        String emailText=email.getText().toString();
+//
+//        String phoneText=phone.getText().toString();
+//        long intPhone=Long.parseLong(phoneText);
+//
+//        String addressText=address.getText().toString();
+//
+//        String ageText=age.getText().toString();
+//        int intAge=Integer.parseInt(ageText);
+//
+//        String genderText=gender.getText().toString();
+//        String birthdateText=birthdate.getText().toString();
+
+
+        intent.putExtra("nameText123",nameText);
+        intent.putExtra("collegeText123",collegeText);
+//        intent.putExtra("branchText123",branchText);
+//        intent.putExtra("CGPAText123",intCGPA);
+//        intent.putExtra("emailText123", emailText);
+//        intent.putExtra("phoneText123",intPhone);
+//        intent.putExtra("addressText123",addressText);
+//        intent.putExtra("ageText123",intAge);
+//        intent.putExtra("genderText123",genderText);
+//        intent.putExtra("birthdateTest123",birthdateText);
 
         startActivity(intent);
     }

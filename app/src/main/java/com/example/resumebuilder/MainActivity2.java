@@ -23,8 +23,8 @@ public class MainActivity2 extends AppCompatActivity {
         College=findViewById(R.id.College);
 
         Intent intent =getIntent();
-        String name=intent.getStringExtra(MainActivity.EXTRA_NAME);
-        String college=intent.getStringExtra(MainActivity.EXTRA_COLLEGE);
+        String name=intent.getStringExtra("nameText123");
+        String college=intent.getStringExtra("collegeText123");
 
         Name.setText(name);
         College.setText(college);
