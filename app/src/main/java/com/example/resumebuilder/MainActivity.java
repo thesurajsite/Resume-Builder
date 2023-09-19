@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         name=findViewById(R.id.name);
         college=findViewById(R.id.college);
         branch=findViewById(R.id.branch);
-        CGPA=findViewById(R.id.CGPA);
+        CGPA=findViewById(R.id.Cgpa);
         email=findViewById(R.id.email);
         phone=findViewById(R.id.phone);
         address=findViewById(R.id.address);
@@ -40,35 +40,35 @@ public class MainActivity extends AppCompatActivity {
 
         String nameText=name.getText().toString();
         String collegeText=college.getText().toString();
-      //  String branchText=branch.getText().toString();
+        String branchText=branch.getText().toString();
 
-//        String CGPAText=CGPA.getText().toString();
+        String CGPAText=CGPA.getText().toString();
 //        double intCGPA=Double.parseDouble(CGPAText);
-//
-//        String emailText=email.getText().toString();
-//
-//        String phoneText=phone.getText().toString();
+
+        String emailText=email.getText().toString();
+
+        String phoneText=phone.getText().toString();
 //        long intPhone=Long.parseLong(phoneText);
-//
-//        String addressText=address.getText().toString();
-//
-//        String ageText=age.getText().toString();
+
+        String addressText=address.getText().toString();
+
+        String ageText=age.getText().toString();
 //        int intAge=Integer.parseInt(ageText);
-//
-//        String genderText=gender.getText().toString();
-//        String birthdateText=birthdate.getText().toString();
+
+        String genderText=gender.getText().toString();
+        String birthdateText=birthdate.getText().toString();
 
 
         intent.putExtra("nameText123",nameText);
         intent.putExtra("collegeText123",collegeText);
-//        intent.putExtra("branchText123",branchText);
-//        intent.putExtra("CGPAText123",intCGPA);
-//        intent.putExtra("emailText123", emailText);
-//        intent.putExtra("phoneText123",intPhone);
-//        intent.putExtra("addressText123",addressText);
-//        intent.putExtra("ageText123",intAge);
-//        intent.putExtra("genderText123",genderText);
-//        intent.putExtra("birthdateTest123",birthdateText);
+        intent.putExtra("branchText123",branchText);
+        intent.putExtra("CGPAText123",CGPAText);
+        intent.putExtra("emailText123", emailText);
+        intent.putExtra("phoneText123",phoneText);
+        intent.putExtra("addressText123",addressText);
+        intent.putExtra("ageText123",ageText);
+        intent.putExtra("genderText123",genderText);
+        intent.putExtra("birthdateText123",birthdateText);
 
         startActivity(intent);
     }
